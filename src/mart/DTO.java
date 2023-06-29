@@ -1,8 +1,11 @@
 package mart;
 
+import java.util.Map;
+
 public class DTO {
-	private int cash,num;
-	private String name;
+	private int cash,num;	// 손님 돈 , 수량
+	private Map<String, Integer> product;	// 상품 이름, 가격
+	
 	public int getCash() {
 		return cash;
 	}
@@ -15,10 +18,12 @@ public class DTO {
 	public void setNum(int num) {
 		this.num = num;
 	}
-	public String getName() {
-		return name;
+	public Map<String, Integer> getProduct() {
+		return product;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setProduct(Map<String, Integer> product) {
+		this.product = product;
 	}
+	
+
 }
