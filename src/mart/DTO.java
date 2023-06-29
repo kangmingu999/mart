@@ -2,9 +2,6 @@ package mart;
 
 public class DTO {
 	private int cash, a, b, c, na, nb, nc, ap, bp, cp;
-	// a,b,c < 기존물품갯수
-	// na,nb,nc < 고객이 고른 갯수
-	// ap, bp, cp < 가격
 
 	public int getCash() {return cash;}
 	public void setCash(int cash) {this.cash = cash;}

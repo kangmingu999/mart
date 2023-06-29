@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import cash.Casher;
 import cash.CasherImpl;
+import cart.CartServiceImpl;
 
 public class Main {
 public static void main(String[] args) {
@@ -11,6 +12,7 @@ public static void main(String[] args) {
 	Casher ca = new CasherImpl();
 	Scanner input = new Scanner(System.in);
 	inventory inven = new inventoryImpl();
+	CartServiceImpl cart = new CartServiceImpl();
 	int num;
 	
 	/*
@@ -29,11 +31,14 @@ public static void main(String[] args) {
 		case 1:
 			inven.display();
 			break;
-		case 2: break;
+		case 2: 
+			cart.Cart();
+			break;
 		case 3: 
 			ca.menu();
 			break;
-		case 4: break;
+		case 4: 
+			return;
 		
 	}
 }
