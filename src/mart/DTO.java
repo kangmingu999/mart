@@ -1,17 +1,10 @@
 package mart;
 
-import java.util.LinkedHashMap;
-
 public class DTO {
-	private int cash, a, b, c ;	// 손님 돈 , 수량
-	private LinkedHashMap<String, Integer> product;	// 상품 이름, 가격
-
-	public int getCash() {
-		return cash;
-	}
-	public void setCash(int cash) {
-		this.cash = cash;
-	}
+	private int a, b, c ;			// 재고 수량
+	private int ap, bp, cp;			// 상품 가격
+	private int na, nb, nc, cash;	// 고객이 넣은 갯수, 손님 돈
+	
 	public int getA() {
 		return a;
 	}
@@ -30,12 +23,51 @@ public class DTO {
 	public void setC(int c) {
 		this.c = c;
 	}
-	public LinkedHashMap<String, Integer> getProduct() {
-		return product;
+	public int getAp() {
+		return ap;
 	}
-	public void setProduct(LinkedHashMap<String, Integer> product) {
-		this.product = product;
+	public void setAp(int ap) {
+		this.ap = ap;
 	}
+	public int getBp() {
+		return bp;
+	}
+	public void setBp(int bp) {
+		this.bp = bp;
+	}
+	public int getCp() {
+		return cp;
+	}
+	public void setCp(int cp) {
+		this.cp = cp;
+	}
+	public int getNa() {
+		return na;
+	}
+	public void setNa(int na) {
+		this.na = na;
+	}
+	public int getNb() {
+		return nb;
+	}
+	public void setNb(int nb) {
+		this.nb = nb;
+	}
+	public int getNc() {
+		return nc;
+	}
+	public void setNc(int nc) {
+		this.nc = nc;
+	}
+	public int getCash() {
+		return cash;
+	}
+	public void setCash(int cash) {
+		this.cash = cash;
+	}
+	
+	
+	
 	
 	
 }
