@@ -2,8 +2,13 @@ package mart;
 
 import java.util.Scanner;
 
+import cash.Casher;
+import cash.CasherImpl;
+
 public class Main {
 public static void main(String[] args) {
+	DTO dto = new DTO();
+	Casher ca = new CasherImpl();
 	Scanner input = new Scanner(System.in);
 	int num;
 	while(true) {
@@ -15,7 +20,9 @@ public static void main(String[] args) {
 		switch(num) {
 		case 1: break;
 		case 2: break;
-		case 3: break;
+		case 3: 
+			ca.menu();
+			break;
 		case 4: break;
 		
 	}
