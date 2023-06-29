@@ -1,29 +1,41 @@
 package mart;
 
-import java.util.Map;
+import java.util.LinkedHashMap;
 
 public class DTO {
-	private int cash,num;	// 손님 돈 , 수량
-	private Map<String, Integer> product;	// 상품 이름, 가격
-	
+	private int cash, a, b, c ;	// 손님 돈 , 수량
+	private LinkedHashMap<String, Integer> product;	// 상품 이름, 가격
+
 	public int getCash() {
 		return cash;
 	}
 	public void setCash(int cash) {
 		this.cash = cash;
 	}
-	public int getNum() {
-		return num;
+	public int getA() {
+		return a;
 	}
-	public void setNum(int num) {
-		this.num = num;
+	public void setA(int a) {
+		this.a = a;
 	}
-	public Map<String, Integer> getProduct() {
+	public int getB() {
+		return b;
+	}
+	public void setB(int b) {
+		this.b = b;
+	}
+	public int getC() {
+		return c;
+	}
+	public void setC(int c) {
+		this.c = c;
+	}
+	public LinkedHashMap<String, Integer> getProduct() {
 		return product;
 	}
-	public void setProduct(Map<String, Integer> product) {
+	public void setProduct(LinkedHashMap<String, Integer> product) {
 		this.product = product;
 	}
 	
-
+	
 }
