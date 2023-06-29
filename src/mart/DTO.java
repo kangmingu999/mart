@@ -1,11 +1,17 @@
 package mart;
 
-import java.util.Map;
+import java.util.LinkedHashMap;
 
 public class DTO {
 	private int cash,num;	// 손님 돈 , 수량
-	private Map<String, Integer> product;	// 상품 이름, 가격
+	private LinkedHashMap<String, Integer> product;	// 상품 이름, 가격
 	
+	public LinkedHashMap<String, Integer> getProduct() {
+		return product;
+	}
+	public void setProduct(LinkedHashMap<String, Integer> product) {
+		this.product = product;
+	}
 	public int getCash() {
 		return cash;
 	}
@@ -17,12 +23,6 @@ public class DTO {
 	}
 	public void setNum(int num) {
 		this.num = num;
-	}
-	public Map<String, Integer> getProduct() {
-		return product;
-	}
-	public void setProduct(Map<String, Integer> product) {
-		this.product = product;
 	}
 	
 
