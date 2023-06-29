@@ -10,7 +10,6 @@ public static void main(String[] args) {
 	DTO dto = new DTO();
 	Casher ca = new CasherImpl();
 	Scanner input = new Scanner(System.in);
-	
 	inventory inven = new inventoryImpl();
 	int num;
 	/*

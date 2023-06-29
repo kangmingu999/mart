@@ -31,8 +31,7 @@ public class inventoryImpl implements inventory{
 		}
 	}
 	
-	@Override
-	public void modInven() {
+	private void modInven() {
 		while(true) {
 			System.out.println("\n=== 수량 수정 ===");
 			System.out.print("\n1.사과\n2.포도\n3.복숭아\n4.main 나가기\n>>>");
@@ -57,8 +56,7 @@ public class inventoryImpl implements inventory{
 		}
 	}
 
-	@Override
-	public void checkInven() {
+	private void checkInven() {
 			System.out.println("\n=== 재고 수량 확인 ===");
 			System.out.println("1.사과 : " + dto.getA());
 			System.out.println("2.포도 : " + dto.getB());
