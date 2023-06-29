@@ -8,16 +8,15 @@ import cart.CartServiceImpl;
 
 public class Main {
 public static void main(String[] args) {
+	
 	DTO dto = new DTO();
+	
 	Casher ca = new CasherImpl();
-	Scanner input = new Scanner(System.in);
 	inventory inven = new inventoryImpl();
 	CartServiceImpl cart = new CartServiceImpl();
+
+	Scanner input = new Scanner(System.in);
 	int num;
-	
-	/*
-	 	1.사과 2.포도 3.복숭아
-	*/
 	
 	while(true) {
 		System.out.println("1. 관리자");
@@ -29,13 +28,13 @@ public static void main(String[] args) {
 		switch(num) {
 		
 		case 1:
-			inven.display();
+			inven.display(dto);
 			break;
 		case 2: 
-			cart.Cart();
+			cart.Cart(dto);
 			break;
 		case 3: 
-			ca.menu();
+			ca.menu(dto);
 			break;
 		case 4: 
 			return;

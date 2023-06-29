@@ -1,6 +1,5 @@
 package cash;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 import mart.DTO;
@@ -10,14 +9,14 @@ public class CasherImpl implements Casher{
 	Scanner sc = new Scanner(System.in);
 	int num,sum = 0;
 	
-	public void chk() {
+	public void chk(DTO d) {
 		System.out.println("아래는 현재 물품들과 구매하실 물품의 갯수입니다.");
 		System.out.println("사과 : " + d.getNa());
 		System.out.println("포도 : " + d.getNb());
 		System.out.println("복숭아 : " + d.getNc());
 	}
 
-	public void buy() {
+	public void buy(DTO d) {
 		System.out.println("현재 가지고 계신 돈은 " + d.getCash() +"원 입니다.");
 		int ap = d.getNa() * d.getAp();
 		int bp = d.getNb() * d.getBp();
@@ -30,7 +29,7 @@ public class CasherImpl implements Casher{
 		}
 	}
 	
-	public void menu() {
+	public void menu(DTO dto) {
 		while(true) {
 			System.out.println("1. 장바구니 내용 확인");
 			System.out.println("2. 물품 결제");
@@ -39,10 +38,10 @@ public class CasherImpl implements Casher{
 			num = sc.nextInt();
 			switch(num) {
 			case 1: 
-				chk();
+				chk(dto);
 				break;
 			case 2: 
-				buy();
+				buy(dto);
 				break;
 			case 3: return;
 			}

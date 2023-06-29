@@ -10,29 +10,29 @@ public class CartServiceImpl implements CartService{
 	public Scanner input = new Scanner(System.in);
 	public int num, num2;
 	String name;
-	public void addApple() {
+	public void addApple(DTO dto) {
 		System.out.print("사과 갯수 : ");
 		dto.setNa(input.nextInt());
 	}
 
-	public void addGrape() {
+	public void addGrape(DTO dto) {
 		System.out.print("포도 갯수 : ");
 		dto.setNb(input.nextInt());
 	}
 
-	public void addPeach() {
+	public void addPeach(DTO dto) {
 		System.out.print("복숭아 갯수 : ");
 		dto.setNc(input.nextInt());
 	}
 	
-	public void showObject() {
+	public void showObject(DTO dto) {
 		System.out.println("사과 갯수 : "+dto.getNa());
 		System.out.println("포도 갯수 : "+dto.getNb());
 		System.out.println("복숭아 갯수 : "+dto.getNc());
 	}
 	
 	
-	public void Cart() {
+	public void Cart(DTO dto) {
 		System.out.print("현금 : ");
 		dto.setCash(input.nextInt());
 		while(true) {
@@ -45,16 +45,16 @@ public class CartServiceImpl implements CartService{
 			num = input.nextInt();
 			switch (num) {
 			case 1 :
-				addApple();
+				addApple(dto);
 				break;
 			case 2 : 
-				addGrape();
+				addGrape(dto);
 				break;
 			case 3 : 
-				addPeach();
+				addPeach(dto);
 				break;
 			case 4 : 
-				showObject();
+				showObject(dto);
 				break;
 			case 5 : return;
 			}

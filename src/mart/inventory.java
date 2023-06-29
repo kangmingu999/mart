@@ -1,5 +1,5 @@
 package mart;
 
 public interface inventory {
-	public void display();
+	public void display(DTO dto);
 }
