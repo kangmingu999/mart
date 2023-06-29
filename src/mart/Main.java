@@ -12,9 +12,11 @@ public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 	inventory inven = new inventoryImpl();
 	int num;
+	
 	/*
 	 	1.사과 2.포도 3.복숭아
-	 */
+	*/
+	
 	while(true) {
 		System.out.println("1. 관리자");
 		System.out.println("2. 소비자");
